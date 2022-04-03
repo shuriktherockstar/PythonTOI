@@ -33,3 +33,4 @@ for i in range(3):
     count = counter[i]
     print("Количество овощей \"{}\" - {}".format(veggie.capitalize(), count))
 print()
+
