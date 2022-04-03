@@ -9,17 +9,17 @@ print()
 
 print("Названия нижним регистром:")
 for veggie in veggies:
-    print(veggie.lower(), end=' ')
+    print("[{}]".format(veggie.lower()), end=' ')
 print()
 
 print("Названия верхним регистром:")
 for veggie in veggies:
-    print(veggie.upper(), end=' ')
+    print("[{}]".format(veggie.upper()), end=' ')
 print()
 
 print("Первая буква верхним регистром, остальные - нижним:")
 for veggie in veggies:
-    print(veggie.capitalize(), end=' ')
+    print("[{}]".format(veggie.capitalize()), end=' ')
 print()
 
 for veggie in veggies:
