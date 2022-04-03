@@ -1,33 +1,35 @@
-Names = []
-Counts = []
+veggies = []
+counter = []
 
 for i in range(3):
-    word = str(input("Введите название предмета: "))
-    Names.append(word)
+    print("Введите название {} овоща - ".format(i+1), end='')
+    veg = str(input())
+    veggies.append(veg)
 print()
 
 print("Названия нижним регистром:")
-for thing in Names:
-    print(thing.lower())
+for veggie in veggies:
+    print(veggie.lower(), end=' ')
 print()
 
 print("Названия верхним регистром:")
-for thing in Names:
-    print(thing.upper())
+for veggie in veggies:
+    print(veggie.upper(), end=' ')
 print()
 
-print("Первая буква большая, остальные нижним регистром:")
-for thing in Names:
-    print(thing.capitalize())
+print("Первая буква верхним регистром, остальные - нижним:")
+for veggie in veggies:
+    print(veggie.capitalize(), end=' ')
 print()
 
-for thing in Names:
-    number = int(input("Количество предметов - {}".format(thing)))
-    Counts.append(number)
+for veggie in veggies:
+    print("Количество овощей {} - ".format(veggie), end='')
+    count = int(input())
+    counter.append(count)
 print()
 
 for i in range(3):
-    Name = Names[i]
-    Count = Counts[i]
-    print("Количество предметов {} - {}".format(Name, Count).capitalize())
+    veggie = veggies[i]
+    count = counter[i]
+    print("Количество овощей {} - {}".format(veggie.capitalize(), count))
 print()
