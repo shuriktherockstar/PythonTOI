@@ -72,10 +72,6 @@ def ArcCos():
         print("Ошибка!")
 
 
-def Quit():
-    quit()
-
-
 def Calc():
     Information()
     while True:
@@ -99,7 +95,7 @@ def Calc():
         elif oper == 'АРККОС' or oper == 'Арккос' or oper == 'арккос':
             ArcCos()
         elif oper == 'ВЫЙТИ' or oper == 'Выйти' or oper == 'выйти':
-            Quit()
+            break
         else:
             print("Нет такой операции!")
 
