@@ -23,13 +23,13 @@ for veggie in veggies:
 print()
 
 for veggie in veggies:
-    print("Количество овощей {} - ".format(veggie), end='')
-    count = int(input())
+    print("Количество овощей \"{}\" - ".format(veggie), end='')
+    count = input()
     counter.append(count)
 print()
 
 for i in range(3):
     veggie = veggies[i]
     count = counter[i]
-    print("Количество овощей {} - {}".format(veggie.capitalize(), count))
+    print("Количество овощей \"{}\" - {}".format(veggie.capitalize(), count))
 print()
