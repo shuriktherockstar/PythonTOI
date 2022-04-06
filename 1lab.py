@@ -1,8 +1,8 @@
 firstNum = int(input("Введите произвольное число: "))
-secNum = int(input("Введите пограничное число: "))
-if firstNum > secNum * 3:
+secondNum = int(input("Введите пограничное число: "))
+if firstNum > secondNum * 3:
     print("Произвольное число больше пограничного более, чем в три раза")
-elif firstNum > secNum:
+elif firstNum > secondNum:
     print("Произвольное больше, чем пограничное")
-elif firstNum < secNum:
+elif firstNum < secondNum:
     print("Пограничное число больше, чем произвольное")
