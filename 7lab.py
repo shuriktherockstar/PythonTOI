@@ -1,30 +1,30 @@
 def wListCreating():
     print("Введите список слов через запятую: ")
-    wList = input().split(", ")
-    return(wList)
+    w_list = input().split(", ")
+    return w_list
 
 
-def wLotsCreating(wList):
-    wLots = set(wList)
-    LotsLength = len(wLots)
-    print("Создано множество из {} слов(-а): ".format(LotsLength))
-    print(wLots)
-    return wLots, LotsLength
+def wLotsCreating(w_list):
+    w_lots = set(w_list)
+    lots_length = len(w_lots)
+    print("Создано множество из {} слов(-а): ".format(lots_length))
+    print(w_lots)
+    return w_lots, lots_length
 
 
-def valListCreating(LotsLength):
-    valList = []
-    for i in range(LotsLength):
+def valListCreating(lots_length):
+    val_list = []
+    for i in range(lots_length):
         print("Дайте толкование {} слова".format(i + 1))
         val = input()
-        valList.append(val)
-    return valList
+        val_list.append(val)
+    return val_list
 
 
-def DictCreating(wLots, valList):
-    Dict = dict(zip(wLots, valList))
-    print("Словарь: {}".format(Dict))
-    return Dict
+def DictCreating(w_lots, val_list):
+    dictionary = dict(zip(w_lots, val_list))
+    print("Словарь: {}".format(dictionary))
+    return dictionary
 
 # В самой программе a - список слов, b - множество, c - список значений (value), d - словарь
 
