@@ -102,9 +102,3 @@ class Calculator:
             else:
                 print("Нет такой операции!")
 
-
-def main():
-    Calculator.Calc()
-
-
-main()
